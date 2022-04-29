@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2022-04-29 Fri 12:12 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Carlos Esteves</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Carlos Esteves" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="org-html-themes/styles/bigblow/css/htmlize.css"/>
+<link rel="stylesheet" type="text/css" href="org-html-themes/styles/bigblow/css/bigblow.css"/>
+<link rel="stylesheet" type="text/css" href="org-html-themes/styles/bigblow/css/hideshow.css"/>
+<script type="text/javascript" src="org-html-themes/styles/bigblow/js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="org-html-themes/styles/bigblow/js/jquery-ui-1.10.2.min.js"></script>
+<script type="text/javascript" src="org-html-themes/styles/bigblow/js/jquery.localscroll-min.js"></script>
+<script type="text/javascript" src="org-html-themes/styles/bigblow/js/jquery.scrollTo-1.4.3.1-min.js"></script>
+<script type="text/javascript" src="org-html-themes/styles/bigblow/js/jquery.zclip.min.js"></script>
+<script type="text/javascript" src="org-html-themes/styles/bigblow/js/bigblow.js"></script>
+<script type="text/javascript" src="org-html-themes/styles/bigblow/js/hideshow.js"></script>
+<script type="text/javascript" src="org-html-themes/styles/lib/js/jquery.stickytableheaders.min.js"></script>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2019 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Carlos Esteves</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#orgcc08f21">Home</a>
+<ul>
+<li><a href="#org9b52121">Bio</a></li>
+<li><a href="#orgc24a5b5">News</a></li>
+<li><a href="#org0950da6">Research</a></li>
+<li><a href="#org63771e7">Selected publications</a></li>
+<li><a href="#orgc090792">Manuscripts</a></li>
+<li><a href="#orga2d2f27">Service</a></li>
+<li><a href="#orgd304edb">Teaching</a></li>
+<li><a href="#org76c4f70">External</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgcc08f21" class="outline-2">
+<h2 id="orgcc08f21">Home</h2>
+<div class="outline-text-2" id="text-orgcc08f21">
+</div>
+<div id="outline-container-org9b52121" class="outline-3">
+<h3 id="org9b52121">Bio</h3>
+<div class="outline-text-3" id="text-org9b52121">
+<table>
+<tr>
+<td style="width:70%;vertical-align:middle">
+
+<p>
+I am a Research Scientist at <a href="https://research.google">Google Research</a>, NYC.
+</p>
+
+<p>
+I completed my Ph.D. in <a href="http://www.cis.upenn.edu">Computer and Information Science</a> at the <a href="https://www.grasp.upenn.edu/">GRASP Laboratory</a>, <a href="http://www.upenn.edu">University of Pennsylvania</a>, under the supervision of <a href="http://www.cis.upenn.edu/~kostas/">Kostas Daniilidis</a>.
+</p>
+
+<p>
+Prior to that I received the B.S. in computer engineering and M.S. in electronic and computer engineering degrees from the <a href="https://en.wikipedia.org/wiki/Instituto_Tecnol%C3%B3gico_de_Aeron%C3%A1utica">Aeronautics Institute of Technology</a> (ITA) in Brazil.
+</p>
+
+</td>
+<td style="width:30%;vertical-align:middle">
+
+<div class="figure">
+<p><img src="photo.png" alt="photo.png" width="100%" />
+</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="outline-container-orgc24a5b5" class="outline-3">
+<h3 id="orgc24a5b5">News</h3>
+<div class="outline-text-3" id="text-orgc24a5b5">
+<ul class="org-ul">
+<li>Mar 29, 2022: Our paper, <i>Light Field Neural Rendering</i> has been accepted as an oral to CVPR'22! See the <a href="https://light-field-neural-rendering.github.io">project page</a> for all details!</li>
+<li>Jul 19, 2021: Our new paper, <i>Implicit-PDF: Non-Parametric Representation of Probability Distributions on the Rotation Manifold</i> has been accepted to ICML and will be presented this week! See the <a href="https://implicit-pdf.github.io">project page</a> for all details!</li>
+<li>Sep 26, 2020: Our paper, <i>Spin-Weighted Spherical CNNs</i> has been accepted to NeurIPS! Camera-ready <a href="https://arxiv.org/abs/2006.10731">here</a>, code coming soon!</li>
+<li>Apr 13, 2020: I wrote a manuscript about the theory behind Group CNNs, "Theoretical Aspects of Group Equivariant Neural Networks". Check it out <a href="https://arxiv.org/abs/2004.05154">here</a>.</li>
+<li>Sep 09, 2019: The extended version of our paper <i>Learning SO(3) Equivariant Representations with Spherical CNNs</i> will appear on IJCV "Best of ECCV 2018" special edition. New version is already available <a href="https://rdcu.be/bQuEQ">here</a>.</li>
+<li>Jul 22, 2019: Our paper, <i>Equivariant Multi-View Networks</i>, has been accepted as oral to ICCV 2019! Acceptance rate was 4.6%. Paper <a href="https://arxiv.org/pdf/1904.00993">here</a>.</li>
+<li>Apr 23, 2019: Our paper, <i>Cross-domain 3D Equivariant Image Embeddings</i>, has been accepted to ICML! Camera-ready available <a href="https://arxiv.org/pdf/1812.02716">here</a>.</li>
+<li>Jul 05, 2018: Our paper, <i>Learning SO(3) Equivariant Representations with Spherical CNNs</i>, has been accepted as an oral presentation to ECCV 2018! Acceptance rate was 2.4%. Camera-ready version <a href="http://openaccess.thecvf.com/content_ECCV_2018/papers/Carlos_Esteves_Learning_SO3_Equivariant_ECCV_2018_paper.pdf">here</a>.</li>
+<li>Jan 31, 2018: Our <i>Polar Transformer Networks</i> paper has been accepted at ICLR 2018, with <a href="http://search.iclr2018.smerity.com">top 3%</a> review scores!</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org0950da6" class="outline-3">
+<h3 id="org0950da6">Research</h3>
+<div class="outline-text-3" id="text-org0950da6">
+<p>
+My research is on computer vision and machine learning. I'm interested in:
+</p>
+<ul class="org-ul">
+<li>equivariant representations,</li>
+<li>harmonic analysis,</li>
+<li>3D vision,</li>
+<li>pose estimation,</li>
+<li>machine learning for science.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org63771e7" class="outline-3">
+<h3 id="org63771e7">Selected publications</h3>
+<div class="outline-text-3" id="text-org63771e7">
+<p>
+<b>Light Field Neural Rendering</b> <br />
+M. Suhail, C. Esteves, L. Sigal, A. Makadia <br />
+Conference on Computer Vision and Pattern Recognition, CVPR 2022 (oral). <br />
+[ <a href="https://arxiv.org/pdf/2112.09687.pdf">pdf</a> |
+ <a href="https://github.com/google-research/google-research/tree/master/light_field_neural_rendering">code</a> |
+ <a href="https://light-field-neural-rendering.github.io">project page</a> ]
+</p>
+
+<p>
+<b>Implicit-PDF: Non-Parametric Representation of Probability Distributions on the Rotation Manifold</b> <br />
+<b>K. Murphy</b>, <b>C. Esteves</b>, V. Jampani, S. Ramalingam, A. Makadia <br />
+International Conference on Machine Learning, ICML 2021. <br />
+[ <a href="https://arxiv.org/pdf/2106.05965">pdf</a> |
+<a href="https://github.com/google-research/google-research/tree/master/implicit_pdf">code</a> |
+<a href="https://implicit-pdf.github.io">project page</a> ]
+</p>
+
+<p>
+<b>Spin-Weighted Spherical CNNs</b> <br />
+<b>C. Esteves</b>, A. Makadia, K. Daniilidis. <br />
+Conference on Neural Information Processing Systems, NeurIPS 2020. <br />
+[ <a href="http://arxiv.org/pdf/2006.10731">pdf</a> | <a href="http://github.com/daniilidis-group/swscnn">code</a> | <a href="https://youtu.be/TnFvOa9v7do">talk</a> ]
+</p>
+
+<p>
+<b>Equivariant Multi-View Networks</b> <br />
+<b>C. Esteves</b>, <b>Y. Xu</b>, C. Allen-Blanchette, K. Daniilidis. <br />
+International Conference on Computer Vision, ICCV 2019 (oral; acceptance rate 4.6%). <br />
+[ <a href="https://arxiv.org/pdf/1904.00993">pdf</a> | <a href="./downloads/emvn_poster.pdf">poster</a> | <a href="https://conftube.com/video/my3jocjpD0U?tocitem=85">talk</a> | <a href="http://github.com/daniilidis-group/emvn">code</a> ]
+</p>
+
+<p>
+<b>Cross-domain 3D Equivariant Image Embeddings</b> <br />
+<b>C. Esteves</b>, A. Sud, Z. Luo, K. Daniilidis, A. Makadia. <br />
+International Conference on Machine Learning, ICML 2019. <br />
+[ <a href="https://arxiv.org/pdf/1812.02716">pdf</a> | <a href="./downloads/sphemb_poster.pdf">poster</a> ]
+</p>
+
+<p>
+   <b>Learning SO(3) Equivariant Representations with Spherical
+CNNs</b> <br />
+   <b>C. Esteves</b>, C. Allen-Blanchette, A. Makadia, K. Daniilidis. <br />
+   European Conference on Computer Vision, ECCV 2018 (oral; acceptance rate 2.4%). <br />
+   International Journal of Computer Vision, "Best of ECCV 2018" special edition, (IJCV 2019). <br />
+   [ <a href="https://arxiv.org/pdf/1711.06721">pdf</a> | <a href="./downloads/sphcnn_poster.pdf">poster</a> | <a href="https://www.youtube.com/watch?v=Y86rzE4UzKs">talk</a> | <a href="http://github.com/daniilidis-group/spherical-cnn">code</a> | <a href="https://rdcu.be/bQuEQ">IJCV extended version</a> ]
+</p>
+
+<p>
+<b>Labeling Panoramas with Spherical Hourglass Networks</b> <br />
+<b>C. Esteves</b>, K. Daniilidis, A. Makadia. <br />
+360° Perception and Interaction Workshop at ECCV 2018. <br />
+[ <a href="https://arxiv.org/pdf/1809.02123">pdf</a> | <a href="./downloads/sphhg_poster.pdf">poster</a> ]
+</p>
+
+<p>
+<b>Polar Transformer Networks</b> <br />
+<b>C. Esteves</b>, C. Allen-Blanchette, X. Zhou, K. Daniilidis. <br />
+International Conference on Learning Representations, ICLR 2018. <br />
+[ <a href="https://arxiv.org/pdf/1709.01889">pdf</a> | <a href="./downloads/ptn_poster.pdf">poster</a> | <a href="http://github.com/daniilidis-group/polar-transformer-networks">code</a> | <a href="https://openreview.net/forum?id=HktRlUlAZ">OpenReview</a> ]
+</p>
+
+<p>
+<b>An Analysis of SVD for Deep Rotation Estimation</b> <br />
+J. Levinson, C. Esteves, K. Chen, N. Snavely, A. Kanazawa, A. Rostamizadeh, A. Makadia <br />
+Conference on Neural Information Processing Systems, NeurIPS 2020. <br />
+[ <a href="https://arxiv.org/pdf/2006.14616">pdf</a> ]
+</p>
+
+<p>
+<b>Fast Multi-Image Matching via Density-Based Clustering</b> <br />
+R. Tron, X. Zhou, C. Esteves, K. Daniilidis. <br />
+International Conference on Computer Vision, ICCV 2017. <br />
+[ <a href="http://openaccess.thecvf.com/content_ICCV_2017/papers/Tron_Fast_Multi-Image_Matching_ICCV_2017_paper.pdf">pdf</a> ]
+</p>
+</div>
+</div>
+<div id="outline-container-orgc090792" class="outline-3">
+<h3 id="orgc090792">Manuscripts</h3>
+<div class="outline-text-3" id="text-orgc090792">
+<p>
+<b>Learning Equivariant Representations</b> <br />
+<b>Carlos Esteves</b> <br />
+Ph.D. Thesis <br />
+[ <a href="https://arxiv.org/pdf/2012.02771">pdf</a> ]
+</p>
+
+<p>
+<b>Theoretical Aspects of Group Equivariant Neural Networks</b> <br />
+<b>Carlos Esteves</b> <br />
+[ <a href="https://arxiv.org/pdf/2004.05154">pdf</a> ]
+</p>
+</div>
+</div>
+
+<div id="outline-container-orga2d2f27" class="outline-3">
+<h3 id="orga2d2f27">Service</h3>
+<div class="outline-text-3" id="text-orga2d2f27">
+<ul class="org-ul">
+<li><b>CVPR reviewer</b> (IEEE/CVF Conference on Computer Vision and Pattern Recognition)
+<ul class="org-ul">
+<li>CVPR 2019 <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;arnumber=8954223">Outstanding Reviewer</a></li>
+<li>CVPR 2021 <a href="https://cvpr2021.thecvf.com/node/184">Outstanding Reviewer</a></li>
+</ul></li>
+<li><b>ICLR Reviewer</b> (International Conference on Learning Representations)
+<ul class="org-ul">
+<li>ICLR 2022 <a href="https://iclr.cc/Conferences/2022/Reviewers">Highlighted Reviewer</a></li>
+</ul></li>
+<li><b>ICML reviewer</b> (International Conference on Machine Learning)
+<ul class="org-ul">
+<li>ICML 2021 <a href="https://icml.cc/Conferences/2021/Reviewers">Expert Reviewer</a></li>
+</ul></li>
+<li><b>NeurIPS reviewer</b> (Conference on Neural Information Processing Systems)</li>
+<li><b>ICCV reviewer</b> (IEEE International Conference on Computer Vision)</li>
+<li><b>ECCV reviewer</b> (European Conference on Computer Vison)</li>
+<li><b>TPAMI reviewer</b> (IEEE Transactions on Pattern Analysis and Machine Intelligence)</li>
+<li><b>AAAI reviewer</b> (AAAI Conference on Artificial Intelligence)</li>
+<li><b>GMDL reviewer</b> (Geometry Meets Deep Learning Workshop)</li>
+<li><b>360PI reviewer</b> (360<sup>o</sup> Perception and Interaction Workshop)</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgd304edb" class="outline-3">
+<h3 id="orgd304edb">Teaching</h3>
+<div class="outline-text-3" id="text-orgd304edb">
+<p>
+<b>Math for Machine Learning</b>, MCIT-515. Teaching assistant, Summer/2020. <br />
+<b>Machine Perception</b>, CIS-580. Teaching assistant, Spring/2018, Spring/2019. <br />
+<b>Advanced Robotics</b>, MEAM-620. Teaching assistant, Spring/2017. <br />
+<b>Robotics: Planning and Perception</b>, CIS-390. Teaching assistant, Fall/2016.
+</p>
+</div>
+</div>
+<div id="outline-container-org76c4f70" class="outline-3">
+<h3 id="org76c4f70">External</h3>
+<div class="outline-text-3" id="text-org76c4f70">
+<p>
+[ <a href="./downloads/cv_carlos_esteves.pdf">cv</a> | <a href="http://github.com/machc">github</a> | <a href="https://scholar.google.com/citations?user=7vkMB0cAAAAJ&amp;hl=en&amp;oi=ao">scholar</a> | <a href="https://twitter.com/_machc">twitter</a> | <a href="http://linkedin.com/in/machc">linkedin</a> ]
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Carlos Esteves</p>
+<p class="date">Created: 2022-04-29 Fri 12:12</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
