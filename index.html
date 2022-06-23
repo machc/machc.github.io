@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2022-05-02 Mon 09:55 -->
+<!-- 2022-06-23 Thu 09:53 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Carlos Esteves</title>
@@ -40,7 +40,7 @@
   }
   pre.src {
     position: relative;
-    overflow: visible;
+    overflow: auto;
     padding-top: 1.2em;
   }
   pre.src:before {
@@ -52,7 +52,7 @@
     padding: 3px;
     border: 1px solid black;
   }
-  pre.src:hover:before { display: inline;}
+  pre.src:hover:before { display: inline; margin-top: 14px;}
   /* Languages per Org manual */
   pre.src-asymptote:before { content: 'Asymptote'; }
   pre.src-awk:before { content: 'Awk'; }
@@ -161,6 +161,19 @@
   .footdef  { margin-bottom: 1em; }
   .figure { padding: 1em; }
   .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
   .inlinetask {
     padding: 10px;
     border: 2px solid gray;
@@ -192,50 +205,26 @@
 <script type="text/javascript" src="org-html-themes/styles/bigblow/js/hideshow.js"></script>
 <script type="text/javascript" src="org-html-themes/styles/lib/js/jquery.stickytableheaders.min.js"></script>
 <script type="text/javascript">
-/*
-@licstart  The following is the entire license notice for the
-JavaScript code in this tag.
-
-Copyright (C) 2012-2019 Free Software Foundation, Inc.
-
-The JavaScript code in this tag is free software: you can
-redistribute it and/or modify it under the terms of the GNU
-General Public License (GNU GPL) as published by the Free Software
-Foundation, either version 3 of the License, or (at your option)
-any later version.  The code is distributed WITHOUT ANY WARRANTY;
-without even the implied warranty of MERCHANTABILITY or FITNESS
-FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
-
-As additional permission under GNU GPL version 3 section 7, you
-may distribute non-source (e.g., minimized or compacted) forms of
-that code without the copy of the GNU GPL normally required by
-section 4, provided you include this license notice and a URL
-through which recipients can access the Corresponding Source.
-
-
-@licend  The above is the entire license notice
-for the JavaScript code in this tag.
-*/
+// @license magnet:?xt=urn:btih:e95b018ef3580986a04669f1b5879592219e2a7a&dn=public-domain.txt Public Domain
 <!--/*--><![CDATA[/*><!--*/
- function CodeHighlightOn(elem, id)
- {
-   var target = document.getElementById(id);
-   if(null != target) {
-     elem.cacheClassElem = elem.className;
-     elem.cacheClassTarget = target.className;
-     target.className = "code-highlighted";
-     elem.className   = "code-highlighted";
-   }
- }
- function CodeHighlightOff(elem, id)
- {
-   var target = document.getElementById(id);
-   if(elem.cacheClassElem)
-     elem.className = elem.cacheClassElem;
-   if(elem.cacheClassTarget)
-     target.className = elem.cacheClassTarget;
- }
-/*]]>*///-->
+     function CodeHighlightOn(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.add("code-highlighted");
+         target.classList.add("code-highlighted");
+       }
+     }
+     function CodeHighlightOff(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.remove("code-highlighted");
+         target.classList.remove("code-highlighted");
+       }
+     }
+    /*]]>*///-->
+// @license-end
 </script>
 </head>
 <body>
@@ -245,29 +234,29 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orgb134328">Home</a>
+<li><a href="#org8fd2953">Home</a>
 <ul>
-<li><a href="#org78e964b">Bio</a></li>
-<li><a href="#org5025f23">News</a></li>
-<li><a href="#org0c9cec2">Research</a></li>
-<li><a href="#org6bd8fc0">Selected publications</a></li>
-<li><a href="#org2c64d88">Manuscripts</a></li>
-<li><a href="#orge28c469">Service</a></li>
-<li><a href="#org0c091b0">Teaching</a></li>
-<li><a href="#org1a27c71">External</a></li>
+<li><a href="#org8837ff1">Bio</a></li>
+<li><a href="#org82ed45d">News</a></li>
+<li><a href="#org018a3a4">Research</a></li>
+<li><a href="#org5431971">Selected publications</a></li>
+<li><a href="#orgd42cbda">Manuscripts</a></li>
+<li><a href="#orgc283c00">Service</a></li>
+<li><a href="#org8025a6a">Teaching</a></li>
+<li><a href="#org079155b">External</a></li>
 </ul>
 </li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-orgb134328" class="outline-2">
-<h2 id="orgb134328">Home</h2>
-<div class="outline-text-2" id="text-orgb134328">
+<div id="outline-container-org8fd2953" class="outline-2">
+<h2 id="org8fd2953">Home</h2>
+<div class="outline-text-2" id="text-org8fd2953">
 </div>
-<div id="outline-container-org78e964b" class="outline-3">
-<h3 id="org78e964b">Bio</h3>
-<div class="outline-text-3" id="text-org78e964b">
+<div id="outline-container-org8837ff1" class="outline-3">
+<h3 id="org8837ff1">Bio</h3>
+<div class="outline-text-3" id="text-org8837ff1">
 <table>
 <tr>
 <td style="width:70%;vertical-align:middle">
@@ -287,7 +276,7 @@ Prior to that I received the B.S. in computer engineering and M.S. in electronic
 </td>
 <td style="width:30%;vertical-align:middle">
 
-<div class="figure">
+<div id="org73bf714" class="figure">
 <p><img src="photo.png" alt="photo.png" width="100%" />
 </p>
 </div>
@@ -296,11 +285,11 @@ Prior to that I received the B.S. in computer engineering and M.S. in electronic
 </table>
 </div>
 </div>
-<div id="outline-container-org5025f23" class="outline-3">
-<h3 id="org5025f23">News</h3>
-<div class="outline-text-3" id="text-org5025f23">
+<div id="outline-container-org82ed45d" class="outline-3">
+<h3 id="org82ed45d">News</h3>
+<div class="outline-text-3" id="text-org82ed45d">
 <ul class="org-ul">
-<li>Mar 29, 2022: Our paper, <i>Light Field Neural Rendering</i> has been accepted as an oral to CVPR'22! See the <a href="https://light-field-neural-rendering.github.io">project page</a> for all details!</li>
+<li>Jun 23, 2022: Our paper, <i>Light Field Neural Rendering</i> is among the 33 <a href="https://twitter.com/CVPR/status/1539772091112857600/photo/1">best paper finalists</a> (out of 8,161 submissions) at CVPR'22! See the <a href="https://light-field-neural-rendering.github.io">project page</a> for all details!</li>
 <li>Jul 19, 2021: Our new paper, <i>Implicit-PDF: Non-Parametric Representation of Probability Distributions on the Rotation Manifold</i> has been accepted to ICML and will be presented this week! See the <a href="https://implicit-pdf.github.io">project page</a> for all details!</li>
 <li>Sep 26, 2020: Our paper, <i>Spin-Weighted Spherical CNNs</i> has been accepted to NeurIPS! Camera-ready <a href="https://arxiv.org/abs/2006.10731">here</a>, code coming soon!</li>
 <li>Apr 13, 2020: I wrote a manuscript about the theory behind Group CNNs, "Theoretical Aspects of Group Equivariant Neural Networks". Check it out <a href="https://arxiv.org/abs/2004.05154">here</a>.</li>
@@ -312,9 +301,9 @@ Prior to that I received the B.S. in computer engineering and M.S. in electronic
 </ul>
 </div>
 </div>
-<div id="outline-container-org0c9cec2" class="outline-3">
-<h3 id="org0c9cec2">Research</h3>
-<div class="outline-text-3" id="text-org0c9cec2">
+<div id="outline-container-org018a3a4" class="outline-3">
+<h3 id="org018a3a4">Research</h3>
+<div class="outline-text-3" id="text-org018a3a4">
 <p>
 My research is on computer vision and machine learning. I'm interested in:
 </p>
@@ -327,13 +316,13 @@ My research is on computer vision and machine learning. I'm interested in:
 </ul>
 </div>
 </div>
-<div id="outline-container-org6bd8fc0" class="outline-3">
-<h3 id="org6bd8fc0">Selected publications</h3>
-<div class="outline-text-3" id="text-org6bd8fc0">
+<div id="outline-container-org5431971" class="outline-3">
+<h3 id="org5431971">Selected publications</h3>
+<div class="outline-text-3" id="text-org5431971">
 <p>
 <b>Light Field Neural Rendering</b> <br />
 M. Suhail, C. Esteves, L. Sigal, A. Makadia <br />
-Conference on Computer Vision and Pattern Recognition, CVPR 2022 (oral). <br />
+Conference on Computer Vision and Pattern Recognition, CVPR 2022 (oral, best paper finalist). <br />
 [ <a href="https://arxiv.org/pdf/2112.09687.pdf">pdf</a> |
  <a href="https://github.com/google-research/google-research/tree/master/light_field_neural_rendering">code</a> |
  <a href="https://light-field-neural-rendering.github.io">project page</a> ]
@@ -407,9 +396,9 @@ International Conference on Computer Vision, ICCV 2017. <br />
 </p>
 </div>
 </div>
-<div id="outline-container-org2c64d88" class="outline-3">
-<h3 id="org2c64d88">Manuscripts</h3>
-<div class="outline-text-3" id="text-org2c64d88">
+<div id="outline-container-orgd42cbda" class="outline-3">
+<h3 id="orgd42cbda">Manuscripts</h3>
+<div class="outline-text-3" id="text-orgd42cbda">
 <p>
 <b>Learning Equivariant Representations</b> <br />
 <b>Carlos Esteves</b> <br />
@@ -425,14 +414,15 @@ Ph.D. Thesis <br />
 </div>
 </div>
 
-<div id="outline-container-orge28c469" class="outline-3">
-<h3 id="orge28c469">Service</h3>
-<div class="outline-text-3" id="text-orge28c469">
+<div id="outline-container-orgc283c00" class="outline-3">
+<h3 id="orgc283c00">Service</h3>
+<div class="outline-text-3" id="text-orgc283c00">
 <ul class="org-ul">
 <li><b>CVPR reviewer</b> (IEEE/CVF Conference on Computer Vision and Pattern Recognition)
 <ul class="org-ul">
 <li>CVPR 2019 <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;arnumber=8954223">Outstanding Reviewer</a></li>
 <li>CVPR 2021 <a href="https://cvpr2021.thecvf.com/node/184">Outstanding Reviewer</a></li>
+<li>CVPR 2022 <a href="https://cvpr2022.thecvf.com/outstanding-reviewers">Outstanding Reviewer</a> (top 2.4%)</li>
 </ul></li>
 <li><b>ICLR Reviewer</b> (International Conference on Learning Representations)
 <ul class="org-ul">
@@ -453,9 +443,9 @@ Ph.D. Thesis <br />
 </ul>
 </div>
 </div>
-<div id="outline-container-org0c091b0" class="outline-3">
-<h3 id="org0c091b0">Teaching</h3>
-<div class="outline-text-3" id="text-org0c091b0">
+<div id="outline-container-org8025a6a" class="outline-3">
+<h3 id="org8025a6a">Teaching</h3>
+<div class="outline-text-3" id="text-org8025a6a">
 <p>
 <b>Math for Machine Learning</b>, MCIT-515. Teaching assistant, Summer/2020. <br />
 <b>Machine Perception</b>, CIS-580. Teaching assistant, Spring/2018, Spring/2019. <br />
@@ -464,9 +454,9 @@ Ph.D. Thesis <br />
 </p>
 </div>
 </div>
-<div id="outline-container-org1a27c71" class="outline-3">
-<h3 id="org1a27c71">External</h3>
-<div class="outline-text-3" id="text-org1a27c71">
+<div id="outline-container-org079155b" class="outline-3">
+<h3 id="org079155b">External</h3>
+<div class="outline-text-3" id="text-org079155b">
 <p>
 [ <a href="./downloads/cv_carlos_esteves.pdf">cv</a> | <a href="http://github.com/machc">github</a> | <a href="https://scholar.google.com/citations?user=cFFrCF0AAAAJ&amp;hl=en&amp;oi=ao">scholar</a> | <a href="https://twitter.com/_machc">twitter</a> | <a href="http://linkedin.com/in/machc">linkedin</a> ]
 </p>
@@ -476,8 +466,8 @@ Ph.D. Thesis <br />
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Carlos Esteves</p>
-<p class="date">Created: 2022-05-02 Mon 09:55</p>
-<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+<p class="date">Created: 2022-06-23 Thu 09:53</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
 </html>
